@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="icon" href="Images/ball.png">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	
+	<header>
+	<h1>Hawkes Bay Football</h1>
+	</header>
+	<!--Navigation bar-->
+	<nav>
+		<div class="menubutton" onclick="openNav()">&#9776; MENU</div>
+		
+		<ul>
+			<li><a href="index.html" class="active">Home</a></li>
+			<li><a href="clubs.html">Local Clubs</a></li>
+			<li><a href="fields.html">Local Fields</a></li>
+			<li><a href="rules.html">Football Rules</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<div>
+		<form class="search-form" method="get" action="http://www.google.com/search" target="_blank">
+			<label>Keywords </label>
+			<input type="text" name="q" />
+			<input type="submit" value="SEARCH"/>
+		</form>
+		</div>
+	</nav>
+
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+		<a href="clubs.html">Local Clubs</a>
+		<a href="fields.html">Local Fields</a>
+		<a href="rules.html">Football Rules</a>
+		<a href="contact.html">Contact Us</a>
+		</div>
+	</div>
+	
+
+
+<!--main area-->
+<main>
+	<!--SECTION 1-->
+	<section>
+	<br><br><br>
+	<div class="calltoaction">
+	<h3>Interested in joining a local club?</h3>
+	<div> <button> <a href="clubs.html" style="padding:5px;">Click Here<a>
+	</button>
+	</div>
+	</div>
+	<br>
+	<div class="widgettitle"> <h2>New Zealand Premiership League</h2>
+	</div>
+	<br><br>
+	</section>
+	
+	<!--SECTION 2-->
+	<section>
+<div id="scoreaxis-widget-9c8d4" style="border-width:1px;border-color:rgba(0, 0, 0, 0.15);border-style:solid;border-radius:8px;padding:10px;background:rgb(255, 255, 255);max-width:600px;margin: auto;" data-reactroot=""><iframe id="Iframe" src="https://www.scoreaxis.com/widget/standings-widget/1055?&amp;inst=9c8d4" style="width:100%;border:none;transition:all 300ms ease"></iframe></div>				
+	</section>		
+	<br><br><br><br><br>
+	<!--SECTION 3-->
+	<section>
+	<div class="acknowledge">
+	<h4>Acknowledgements</h4>
+	<br>
+	Backgound image: <a href="https://www.freepik.com/premium-photo/football-scene-stadium-with-close-up-soccer-shoe-kicking-ball_17266449.htm">freepik.com</a>
+	<br>
+	League Standings Widget: <a href="https://www.scoreaxis.com/free-soccer-widgets/">scoreaxis.com</a>
+	<br>
+	Football Rules: <a href="https://www.rulesofsport.com/sports/football.html">rulesofsport.com</a>
+	</div>
+	</section>	
+	<br><br><br><br><br>
+</main>
+
+  <!--Footer Area-->
+  <footer>
+		<div>
+			<p>Created By Liam Palmers<br>
+				ITWD5.130 Website Development. School of Computing. EIT.</p>	
+		</div>	
+  </footer>
+  
+  <!--Embed the Javascript file here-->
+  <script src="JS/javascript.js"></script>
+
+</body>
+</html>

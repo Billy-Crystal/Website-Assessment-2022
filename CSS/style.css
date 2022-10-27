@@ -1,0 +1,389 @@
+
+
+header h1 {
+	text-align: center;
+	padding: 20px;
+	height: 100px;
+	background-color: #9AF293;
+}
+
+body {
+	/*background: white;*/
+	background-image: url('../Images/footballscene.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	font-family: "Times New Roman", serif;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+
+}	
+
+
+nav {
+	min-height: 5vh;
+	/*background-color:#ABEBC6;*/
+	
+
+	display: flex;
+	justify-content: left;
+	align-items: center;
+}
+
+.menubutton {
+	font-size:20px;
+	cursor:pointer;
+	background-color:pink
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: visible;
+	
+	display: none;
+}
+
+nav ul li {
+	display: inline-block;
+	font-family: 'Oswald', sans-serif;
+	font-size: 14px;
+	position: relative;
+}
+
+nav ul li a {
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 4px 6px;
+	text-decoration: none;  
+	
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+nav div {
+	display: block;
+	text-align: center;
+	padding: 6px 7px;
+}
+
+nav form {
+	display: flex;
+	right: 5px;
+	top: 75px;
+}
+
+.calltoaction {
+	display:block;
+	text-align:center;
+	background-color: #9AF293;
+	padding: 15px;
+	width:300px;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid black;
+	border-radius: 25px;
+}
+
+.widgettitle {
+	display:block;
+	text-align:center;
+	background-color: #9AF293;
+	padding: 15px;
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.active {
+	background-color: orange;
+}
+
+nav ul li a:hover:not(.active) {
+	background-color: gray;
+}
+
+/*add style to curtain menu*/
+
+.overlay {
+  /*Size of the curtain menu*/
+  height: 100%;
+  width: 50%;
+  
+  display: none;
+  position: fixed;
+  
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+ .overlay a {font-size: 20px}
+ .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+
+}
+
+.acknowledge {
+	border: 1px solid red;
+	background-color: #9AF293;
+	justify-content: center;
+	padding: 5px;
+	width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+
+.mastersection {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	margin: -5px -5px;
+}
+
+.leftsection {
+	margin:-2.5px 5px -2.5px 5px;
+}
+
+.rightsection {
+	margin:-2.5px 5px -2.5px 5px;
+}
+
+.clubbox {
+	margin: 5px 5px;
+	background-color: white;
+	padding: 10px;
+	border:1px solid black;
+	
+}
+
+.clublocation {
+	display:none;
+}
+
+.clubdetails {
+	padding: 2px;
+	border:1px solid black;
+	width:280px;
+}
+
+.clubmap {
+	padding:5px;
+}
+
+.fieldsmasterbox {
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	flex-direction:column;
+	padding:-5px:
+	
+	
+}
+
+.fieldsleft {
+	margin:-2.5px 5px -2.5px 5px;
+}
+
+.fieldsright {
+	margin:-2.5px 5px -2.5px 5px;
+}
+
+.fieldschildren {
+	padding:10px;
+	background-color:white;
+	margin:5px 2.5px 5px 2.5px;
+}
+
+.soccerrules {
+	margin:auto;
+	width:300px;
+	border:1px solid red;
+	padding:20px;
+	background-color:white;opacity:0.85;
+	
+}
+
+
+.emailform[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px; 
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical
+}
+
+
+.emailform[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.emailform[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 60%;
+  margin: auto;
+}
+
+/*------------------------------------*/
+/*Set Styles for footer*/
+footer {
+	background: #F4D03F;
+	position: fixed;
+    height: 70px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: 0px;
+	/*Centralize the content inside this element both vertically and horizontally*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+footer p {
+	text-align: center;
+	font-size: 20px;
+}
+
+/*------------------------------------*/
+/*Set styles for main area*/
+main {
+	min-height: 78vh;
+	/*background: white;*/
+}
+
+
+ /*-----------------------*/
+ /*Set styles for form and inputs inside form*/
+ .search-form {
+	 display: block;
+	 text-align: center;
+	 background-color: #9AF293;
+ }
+ 
+ .search-form input[type="submit"] {
+	padding: 5px 20px 5px 20px; 
+	background-color: orange;
+ }
+ 
+  .search-form input[type="text"] {
+	padding: 5px 20px 5px 20px; 
+ }
+ 
+
+/*----------------------------------------------------------------*/
+ 
+
+ 
+@media only screen and (min-width: 332px) {
+	header h1 {
+		height: 70px;
+	}
+}
+ 
+@media only screen and (min-width: 426px) {
+	.soccerrules {
+		width:380px;
+	}
+}
+ 
+@media only screen and (min-width: 500px) {
+	nav form {
+		position: absolute;
+		right: 5px;
+		top: 75px;
+}  
+	.soccerrules {
+		width:440px;
+	}
+}
+ 
+@media only screen and (min-width: 768px) {
+	footer {
+		height: 50px;
+	}
+	.mastersection {
+		flex-direction:row;
+	}
+	.fieldsmasterbox {
+		flex-direction:row;
+	}
+	.fieldschildren {
+		margin:5px 2.5px 5px 2.5px;
+	}
+	.fieldsleft {
+		margin:0 0 0 0;
+	}
+	.fieldsright {
+		margin:0 0 0 0;
+	}
+	.leftsection {
+		margin:-2.5px -2.5px -2.5px -2.5px;
+	}
+	.rightsection {
+		margin:-2.5px -2.5px -2.5px -2.5px;
+	}
+}
+ 
+@media only screen and (min-width: 1023px) {
+	nav ul {
+		display: inline-block;
+	}	
+}

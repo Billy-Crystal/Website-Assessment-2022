@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="icon" href="Images/ball.png">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	
+	<header>
+	<h1>Hawkes Bay Football</h1>
+	</header>
+	<!--Navigation bar-->
+	<nav>
+		<div class="menubutton" style="font-size:20px;cursor:pointer;background-color:pink" onclick="openNav()">&#9776; MENU</div>
+		
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="clubs.html" class="active">Local Clubs</a></li>
+			<li><a href="fields.html">Local Fields</a></li>
+			<li><a href="rules.html">Football Rules</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<div>
+		<form class="search-form" method="get" action="http://www.google.com/search" target="_blank">
+			<label>Keywords </label>
+			<input type="text" name="q" />
+			<input type="submit" value="SEARCH"/>
+		</form>
+		</div>
+	</nav>
+
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+		<a href="index.html">Home</a>
+		<a href="fields.html">Local Fields</a>
+		<a href="rules.html">Football Rules</a>
+		<a href="contact.html">Contact Us</a>
+		</div>
+	</div>
+	
+
+
+<!--main area-->
+<main>
+<br><br><br><br>
+<section class="mastersection">	
+	<section class="leftsection">
+	<div class="clubbox">
+	<h1> Napier City Rovers </h1>
+		<div class="clubdetails">
+		<p>Address: Clyde Jeffery Drive, Tamatea, Napier 4112</p>
+		<p>Phone: 06 844 5846</p>
+		</div>
+		<div class="clubmap">
+		<button onclick="toggleMap1()">Toggle Map</button>
+		</div>
+		<div id="maplink1" class="clublocation">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12313.209994165722!2d176.8565712!3d-39.5076619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd39759d24d494c73!2sNapier%20City%20Rovers%20Football%20Club!5e0!3m2!1sen!2snz!4v1665291243809!5m2!1sen!2snz" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	<div class="clubbox">
+	<h1> Eskview United </h1>
+		<div class="clubdetails">
+		<p>Address: 14 Onehunga Road, Bay View, Napier 4182</p>
+		<p>Phone: 021 298 0900</p>
+		</div>
+		<div class="clubmap">
+		<button onclick="toggleMap2()">Toggle Map</button>
+		</div>
+		<div id="maplink2" class="clublocation">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12325.899074510135!2d176.86841!3d-39.436!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xc4256fcdaaa2fbbf!2sEskview%20United%20Football%20Club!5e0!3m2!1sen!2snz!4v1665291935005!5m2!1sen!2snz" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div style="border:2px solid black;">	
+	</section>
+
+	<section class="rightsection">
+	<div class="clubbox">
+	<h1> Western Rangers </h1>
+		<div class="clubdetails">
+		<p>Address: 1006/1008 Francis Hicks Avenue, Raureka, Hastings 4120</p>
+		<p>Phone: 027 453 4745</p>
+		</div>
+		<div class="clubmap">
+		<button onclick="toggleMap3()">Toggle Map</button>
+		</div>
+		<div id="maplink3" class="clublocation">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12290.729990637723!2d176.827169!3d-39.6343522!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4eb813cc1aadb1ff!2sWestern%20Rangers%20Football%20Club!5e0!3m2!1sen!2snz!4v1665291823738!5m2!1sen!2snz" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>
+	<div class="clubbox">
+	<h1> Hastings Hibernian </h1>
+		<div class="clubdetails">
+		<p>Address: 211 Lyndhurst Road, Frimley, Hastings 4120</p>
+		<p>Phone: 06 878 7866</p>
+		</div>
+		<div class="clubmap">
+		<button onclick="toggleMap4()">Toggle Map</button>
+		</div>
+		<div id="maplink4" class="clublocation">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12292.807890933145!2d176.8357883!3d-39.622656!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5563619283c8e022!2sHastings%20Hibernian!5e0!3m2!1sen!2snz!4v1665291997290!5m2!1sen!2snz" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</div>				
+	</section>		
+</section>	
+
+<br><br><br><br><br>
+
+		
+</main>
+
+  <!--Footer Area-->
+  <footer>
+		<div>
+			<p>Created By Liam Palmers<br>
+				ITWD5.130 Website Development. School of Computing. EIT.</p>	
+		</div>	
+  </footer>
+  
+  <!--Embed the Javascript file here-->
+  <script src="JS/javascript.js"></script>
+
+</body>
+</html>

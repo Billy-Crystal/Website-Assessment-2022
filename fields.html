@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<!------------------------------HEAD------------------------------------------------>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" type="text/css" href="CSS/style.css">
+  <link rel="icon" href="Images/ball.png">
+</head>
+
+<!------------------------------BODY------------------------------------------------>
+<body>
+	
+	<header>
+	<h1>Hawkes Bay Football</h1>
+	</header>
+	<!--Navigation bar-->
+	<nav>
+		<div class="menubutton" style="font-size:20px;cursor:pointer;background-color:pink" onclick="openNav()">&#9776; MENU</div>
+		
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="clubs.html">Local Clubs</a></li>
+			<li><a href="fields.html" class="active">Local Fields</a></li>
+			<li><a href="rules.html">Football Rules</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+		<div>
+		<form class="search-form" method="get" action="http://www.google.com/search" target="_blank">
+			<label>Keywords </label>
+			<input type="text" name="q" />
+			<input type="submit" value="SEARCH"/>
+		</form>
+		</div>
+	</nav>
+
+	<div id="myNav" class="overlay">
+	  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+	  <div class="overlay-content">
+		<a href="index.html">Home</a>
+		<a href="clubs.html">Local Clubs</a>
+		<a href="rules.html">Football Rules</a>
+		<a href="contact.html">Contact Us</a>
+		</div>
+	</div>
+	
+
+
+<!--main area-->
+<main>
+	<br><br><br><br>
+	<section class="fieldsmasterbox">
+		<div class="fieldsleft">
+			<div class="fieldschildren">
+			<h2>Akina Park</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12287.391419460544!2d176.8386403!3d-39.6531385!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69cbcba5d45c13%3A0x707a3984d8842de0!2sAkina%20Park!5e0!3m2!1sen!2snz!4v1666731479877!5m2!1sen!2snz" width="360" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="fieldschildren">
+			<h2>Hawkes Bay Regional Sports Park</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12294.807050064644!2d176.8349693!3d-39.6114003!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69ca09a9e7a791%3A0x9629ac14fd8f890d!2sHawke&#39;s%20Bay%20Regional%20Sports%20Park!5e0!3m2!1sen!2snz!4v1666731402078!5m2!1sen!2snz" width="360" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="fieldschildren">
+			<h2>Guthrie Park</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12285.936815870873!2d176.8873605!3d-39.6613213!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69cb24a9ca5105%3A0x99fb1a787423c3f3!2sGuthrie%20Park!5e0!3m2!1sen!2snz!4v1666731464934!5m2!1sen!2snz" width="360" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+		
+		<div class="fieldsright">
+			<div class="fieldschildren">
+			<h2>St Leonards Park</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12290.542556124727!2d176.8280165!3d-39.6354071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69ca241331be73%3A0x741986daace7b864!2sSt%20Leonards%20Park!5e0!3m2!1sen!2snz!4v1666731446651!5m2!1sen!2snz" width="360" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="fieldschildren">
+			<h2>Windsor Park</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12288.82617015373!2d176.8628097!3d-39.645066!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69caf8ae94805d%3A0xb51d4ac8eb0b4ff0!2sWindsor%20Park!5e0!3m2!1sen!2snz!4v1666731426348!5m2!1sen!2snz" width="360" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+			<div class="fieldschildren">
+			<h2>Tremain Field (Park Island)</h2>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5177.073530661924!2d176.85643842982125!3d-39.50757521441409!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d69b3c677a29f2f%3A0xaab7d94879564e31!2sTremain%20Field!5e0!3m2!1sen!2snz!4v1666730843004!5m2!1sen!2snz" width="360" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+			</div>
+		</div>
+	</section>
+	<br><br><br><br><br>
+		
+</main>
+
+  <!--Footer Area-->
+  <footer>
+		<div>
+			<p>Created By Liam Palmers<br>
+				ITWD5.130 Website Development. School of Computing. EIT.</p>	
+		</div>	
+  </footer>
+  
+  <!--Embed the Javascript file here-->
+  <script src="JS/javascript.js"></script>
+
+</body>
+</html>
